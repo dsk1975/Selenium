@@ -3,8 +3,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
-
-driver = webdriver.Chrome()
+path = '../Selenium/chromedriver'
+driver = webdriver.Chrome(path)
 driver.get("http://python.org")
 
 search = driver.find_element_by_name('q')

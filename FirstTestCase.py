@@ -1,15 +1,14 @@
 
-
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 
 # 1. Initialize browser driver
-driver = webdriver.Chrome()
-path = '/Users/dmitry/Downloads/chromedriver'
-# 2. Open Browser
-# 3. Enter URL
-driver = Chrome(executable_path = path)
+path = '../Selenium/chromedriver'
+driver = webdriver.Chrome(path)
+
+# 2. Open Browser and Enter URL
+
 driver.get('https://thetestingworld.com/testings/')
 # 4. Maximize Browser
 driver.maximize_window()

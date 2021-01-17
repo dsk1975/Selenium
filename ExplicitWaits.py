@@ -3,7 +3,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome()
+
+path = '../Selenium/chromedriver'
+driver = webdriver.Chrome(path)
 driver.get('http://www.python.org')
 
 try:

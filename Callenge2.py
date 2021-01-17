@@ -3,8 +3,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import time
 
-
-driver = webdriver.Chrome()
+path = '../Selenium/chromedriver'
+driver = webdriver.Chrome(path)
 driver.get('https://wiki.python.org/moin/FrontPage')
 searchbox = driver.find_element_by_id('searchinput')
 searchbox.clear()

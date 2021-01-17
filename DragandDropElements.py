@@ -3,7 +3,8 @@ from selenium import webdriver
 import time
 from selenium.webdriver import ActionChains
 
-driver = webdriver.Chrome()
+path = '../Selenium/chromedriver'
+driver = webdriver.Chrome(path)
 driver.get('http://jqueryui.com/droppable')
 driver.switch_to.frame(0)
 

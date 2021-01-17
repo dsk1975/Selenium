@@ -1,6 +1,8 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome()
+
+path = '../Selenium/chromedriver'
+driver = webdriver.Chrome(path)
 driver.get('http://www.seleniumhq.org')
 # element_id = driver.find_element_by_id('q')
 # print('element_id')
